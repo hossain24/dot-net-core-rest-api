@@ -3,6 +3,14 @@ using DotNetApi.Models;
 
 namespace DotNetApi.Data {
     public class MockCommanderRepo : ICommanderRepo {
+        public void CreateCommand (Command cmd) {
+            throw new System.NotImplementedException ();
+        }
+
+        public void DeleteCommand (Command cmd) {
+            throw new System.NotImplementedException ();
+        }
+
         public IEnumerable<Command> GetAllCommands () {
             var commands = new List<Command> {
                 new Command { Id = 1, HowTo = "Go green", Line = "Visit the green hill", Platform = "Hill Track" },
@@ -15,6 +23,14 @@ namespace DotNetApi.Data {
 
         public Command GetCommandById (int id) {
             return new Command { Id = 01, HowTo = "Go green", Line = "Visit the hill", Platform = "Hill Track" };
+        }
+
+        public bool SaveChanges () {
+            throw new System.NotImplementedException ();
+        }
+
+        public void UpdateCommand (Command cmd) {
+            throw new System.NotImplementedException ();
         }
     }
 }
