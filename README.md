@@ -4,4 +4,4 @@
 
 - MVC
 
-- CRCUD like Read, Create, Update, Delelte & Patch data through RESTful API's
+- CRUD like Read, Create, Update, Delelte & Patch data through RESTful API's
